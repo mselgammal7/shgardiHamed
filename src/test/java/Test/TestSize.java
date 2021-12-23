@@ -2,6 +2,7 @@ package Test;
 
 import Page.SizePage;
 import Page.SizeTypePage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestSize extends TestBase{
@@ -29,6 +30,8 @@ public class TestSize extends TestBase{
         SizePage.sa_ve();
         SizePage.delete();
         SizePage.enter();
+        Thread.sleep(3000);
+        Assert.assertTrue(SizePage.deleteMessage.getText().contains("SizeDeleteSuccessfully"));
 
     }
 }

@@ -35,6 +35,8 @@ public class SizePage extends BasePage{
     public WebElement save;
     @FindBy(xpath = "/html/body/kt-base/div/div/div/div[2]/div/kt-catalog/kt-size/div[2]/div/kt-generic-table/div/div[2]/table/tbody/tr/td[4]/button[2]/span/mat-icon")
     public WebElement delete;
+    @FindBy(xpath = "/html/body/div[5]/div/div/div[2]")
+    public WebElement deleteMessage;
 
 
 

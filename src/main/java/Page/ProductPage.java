@@ -65,6 +65,8 @@ public class ProductPage extends BasePage{
     public WebElement buttonsave;
     @FindBy(xpath = "/html/body/kt-base/div/div/div/div[2]/div/kt-catalog/kt-product-list/div[3]/div/kt-generic-table/div/div[2]/table/tbody/tr[4]/td[8]/button[2]/span/mat-icon")
     public WebElement delete;
+    @FindBy(xpath = "/html/body/div[6]/div/div/div[2]")
+    public WebElement deleteMessage;
 
 
 

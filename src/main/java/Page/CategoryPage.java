@@ -95,6 +95,11 @@ public class CategoryPage extends BasePage{
         select.click();
     }
 
+    public void arabic_name(String arabicname1)
+    {
+        arabicname.sendKeys(arabicname1);
+    }
+
     public void sel_ect1()
     {
         select1.click();
@@ -103,11 +108,6 @@ public class CategoryPage extends BasePage{
     public void english_name(String englishname1)
     {
         englishname.sendKeys(englishname1);
-    }
-
-    public void arabic_name(String arabicname1)
-    {
-        arabicname.sendKeys(arabicname1);
     }
 
     public void english_description(String enlishdescription1)
@@ -137,9 +137,10 @@ public class CategoryPage extends BasePage{
         js.executeScript("arguments[0].click()", save);
     }
 
-    public void delete()
-    {
-        delete.click();
+    public void delete() {
+
+            delete.click();
+
     }
 
     public void enter()
