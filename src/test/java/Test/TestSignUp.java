@@ -66,7 +66,7 @@ public class TestSignUp extends TestBase {
         signUpPage.choose_file2();
         signUpPage.mapurl();
         signUpPage.registerbtton(driver);
-
+        Assert.assertTrue(signUpPage.successMessage.getText().contains("AccountCreatedSuccessfully"));
 
     }
 

@@ -9,10 +9,11 @@ public class TestCategory extends TestBase{
 
 
     CategoryPage CategoryPage;
-
+  //  TestLogin newobject;
     @Test(priority = 1)
     public void HappyCategory() throws InterruptedException {
-
+      //  newobject= new TestLogin();
+      //  newobject.HappyLogin();
         driver.navigate().to("https://partner-dev.shgardi.app/auth/login");
         CategoryPage = new CategoryPage(driver);
         CategoryPage.user_name("username369@gmail.com");
@@ -31,7 +32,7 @@ public class TestCategory extends TestBase{
         CategoryPage.choose_file();
         CategoryPage.sa_ve(driver);
         CategoryPage.delete();
-      //  CategoryPage.enter();
+        CategoryPage.enter();
 
 
     }

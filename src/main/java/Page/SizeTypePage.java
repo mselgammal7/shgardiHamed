@@ -34,6 +34,8 @@ public class SizeTypePage extends BasePage{
     public WebElement save;
     @FindBy(xpath = "//*[@id=\"cdk-drop-list-0\"]/tbody/tr/td[2]/button[2]/span/mat-icon")
     public WebElement delete;
+    @FindBy(xpath = "/html/body/div[6]/div/div/div[2]")
+    public WebElement deleteMessage;
 
 
 

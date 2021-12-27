@@ -33,6 +33,7 @@ public class TestLogin extends TestBase
         loginPage.AddUserName("rest");
         loginPage.AddPassword("100100");
         loginPage.ClickLogin();
+        Thread.sleep(3000);
         Assert.assertTrue(loginPage.message2.getText().contains("UserNotRgeistred"));
 
 
@@ -47,7 +48,7 @@ public class TestLogin extends TestBase
         loginPage.ClickLogin();
         Assert.assertTrue(loginPage.message3.getText().contains("Password : minimum Length is 6 characters"));
 
-
+        
     }
 
     @Test(priority = 4)
