@@ -48,7 +48,7 @@ public class TestLogin extends TestBase
         loginPage.ClickLogin();
         Assert.assertTrue(loginPage.message3.getText().contains("Password : minimum Length is 6 characters"));
 
-        
+        //test
     }
 
     @Test(priority = 4)
