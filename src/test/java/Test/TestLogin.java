@@ -21,7 +21,6 @@ public class TestLogin extends TestBase
         loginPage.AddUserName("dairyqueen");
         loginPage.AddPassword("202020");
         loginPage.ClickLogin();
-        Thread.sleep(3000);
         Assert.assertTrue(loginPage.message1.getText().contains("Wrong Password"));
 
 
