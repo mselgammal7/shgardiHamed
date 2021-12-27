@@ -218,6 +218,8 @@ public class SignUpPage extends BasePage {
     public WebElement errordeliverytime;
     @FindBy(xpath = "//*[@id=\"toast-container\"]/div")
     public WebElement selectmapurl;
+    @FindBy(xpath = "/html/body/div[4]/div/div[2]/div[2]")
+    public WebElement successMessage;
 
 
     public SignUpPage(WebDriver driver)

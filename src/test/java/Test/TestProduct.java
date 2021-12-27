@@ -2,6 +2,7 @@ package Test;
 
 import Page.CategoryPage;
 import Page.ProductPage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestProduct extends TestBase{
@@ -40,7 +41,8 @@ public class TestProduct extends TestBase{
         ProductPage.delete();
         ProductPage.enter();
         ProductPage.enter();
-
+        Thread.sleep(3000);
+        Assert.assertTrue(ProductPage.deleteMessage.getText().contains("ProductDeletedSuccessfully"));
 
 
 

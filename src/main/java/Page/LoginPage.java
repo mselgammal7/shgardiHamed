@@ -34,12 +34,14 @@ public class LoginPage extends BasePage {
 
     public void AddUserName(String name)
     {
+
         usernameTx.sendKeys(name);
 
     }
 
     public void AddPassword(String password)
     {
+
         passwordTx.sendKeys(password);
 
     }
